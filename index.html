@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- biblioteca para o scrollreveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+  <!-- <link rel="stylesheet" href="habilidade.css"> -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="styleProfile.css"> -->
+  <link rel="stylesheet" href="scrollreveal.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Botao para voltar ao topo da pagina -->
+  <button id="btn-topo" style="display: none;">Voltar ao topo</button>
+
+  <section>
+    <div class="background">
+      <header>
+        <div class="logo">
+          <!-- <img src="./imagens/logo.png" width="70%"> -->
+          <a>
+            < Pedro=) <li class="corLogo">Estevam /></li>
+          </a>
+        </div>
+        <div class="cabecalho-link">
+          <li>
+            <a href="#s-about">
+              <h3>Home</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#s-hab" id="gridHabilidade">
+              <h3>Conhecimentos</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#s-exp" id="experiencia-link">
+              <h3>Projetos</h3>
+            </a>
+          </li>
+          <li>
+            <a href="links/formacao.html">
+              <h3>Formação</h3>
+            </a>
+          </li>
+          <button>Contato</button>
+
+        </div>
+
+      </header>
+    </div>
+  </section>
+  <section>
+    <div class="container-text">
+      <div class="text">
+        <h3>Olá, pessoal</h3>
+        <h1>Eu sou <span>Pedro E. De Oliveira</span></h1>
+        <p>Bem-vindo ao meu portfólio,<br> e estou entusiasmado em compartilhar com vocês, </br> algumas informações
+          sobre mim e os projetos nos quais trabalhei.</p>
+        <div class="redes-sociais">
+          <a href="https://api.whatsapp.com/send?phone=5516992305292"><img src="./icones/whatsapp.svg" width="20"
+              height="20"></a>
+          <a href="https://www.linkedin.com/in/pedro-estevam-oliveira-1b573716a"><img
+              src="./icones/logotipo-do-linkedin.png" width="20" height="20"></a>
+          <a href="https://github.com/pedro252"><img src="./icones/github.svg" width="20" height="20"></a>
+          <a href="https://www.instagram.com/pedro.estevam99/"><img src="./icones/instagram.svg" width="20"
+              height="20"></a>
+        </div>
+
+        <button class="btn">Sobre mim</button>
+      </div>
+      <div class="image-container">
+        <img src="./imagens/avatar.png" width="400px">
+      </div>
+    </div>
+
+  </section>
+
+  <section id="s-about">
+    <div class="grid-layout">
+
+      <div>
+        <div id="creator-photo" class="delayMediumReveal">
+        </div>
+        <div>
+          <h4 class="delayMediumReveal">Quem sou</h4>
+          <h2 class="delaySmallReveal">Pedro Estevam De Oliveira</h2>
+          <h3 class="delayMediumReveal">
+            Desenvolvedor
+          </h3>
+
+          <p class="delayLargeReveal">
+            Um entusiasta da tecnologia, apaixonado por programação e atualmente cursando Ciência da Computação.
+            Meu objetivo é me tornar um desenvolvedor habilidoso, e estou comprometido em aprender constantemente,
+            participando de projetos e mantendo-me
+            atualizado com as últimas tendências tecnológicas. Estou animado para enfrentar os desafios e contribuir com
+            soluções inovadoras no mundo da computação.
+          </p>
+        </div>
+        <div class="image-grid">
+          <img src="./imagens/foto.jpg" width="250px">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- sessao de Projetos -->
+  <section id="s-exp">
+    <div class="container-experiencia">
+      <h1>Projetos<span>.</span></h1>
+    </div>
+
+    <section class="card-container">
+      <section class="card card1">
+        <div class="card-content">
+          <h3>Quiz Dev</h3>
+          <span class="card-text" id="card-text">
+            tecnologias- React, JavaScript, HTML e CSS<br>
+            O projeto tem como proposta fazer um quiz de perguntas sobre linguagem de programação, <br>
+            onde ele da 4 alternativas como resposta sendo uma delas a corre <br>
+            Quando chegar na ultima questão (5 questoes aleatorias no total), ira mostrar o valor de quantas você
+            acertou.
+            </br>
+          </span>
+
+          <button class="expand-button">
+            <a href="https://github.com/pedro252/QuizGame/tree/main">Mostrar</a>
+          </button>
+        </div>
+      </section>
+      <section class="card card2">
+        <div class="card-content">
+          <h3>Pokedex</h3>
+          <span class="card-text" id="card-text">
+            Tecnologias - Typescript, React, HTML, CSS e JavaScript<br>
+            O projeto mostra uma lista de pokemon com seus status,</br>
+            onde foi criado um campo de pesquisa que ignora as letras maiuscula e minuscula, facilitando a pesquisa </br>
+          </span>
+
+          <button class="expand-button"><a href="https://github.com/pedro252/mypokedexmain">Mostrar</a></button>
+        </div>
+      </section>
+      <section class="card card3">
+        <div class="card-content">
+          <h3>Aplicativo de finanças</h3>
+          <span class="card-text" id="card-text">
+            Tecnologias - JavaScript, React Native, HTML e CSS<br>
+            O Projeto consiste em um aplicativo com entrada e saida de valores<br>
+            onde criei um filtro para de entrada ()
+          </span>
+          </br>
+          <button class="expand-button">Learn more</button>
+        </div>
+      </section>
+      <section class="card card3">
+        <div class="card-content">
+          <h3>Carmen Steffens</h3>
+          <span class="card-text" id="card-text">
+            nov de 2019 - abr de 2022<br>
+            Franca, São Paulo, Brasil · Modelo: Presencial<br>
+            Competências: Office 365 · Servidor Windows · Active Directory
+          </span> </br>
+          <button class="expand-button">Learn more</button>
+        </div>
+      </section>
+    </section>
+  </section>
+  <!-- section do `Conhecimento` -->
+  <section id="s-hab">
+    <div class="container-habilidades">
+      <h1>Conhecimentos<span>.</span></h1>
+    </div>
+    <div class="hab-grid">
+      <div>
+        <p>
+          .Tenho familiaridade com a linguagem de programação Java,incluindo o framework Spring Boot,
+          o que me permite criar aplicações web robustas e escaláveis.
+          Além disso, tenho conhecimento em bancos de dados relacionais, como o MySQL, e estou apto a criar,
+          gerenciar e otimizar estruturas de dados eficientes.
+          No front-end, possuo habilidades em JavaScript, HTML5 e CSS,
+          que me permitem criar interfaces interativas e atraentes para os usuários.
+          Também estou familiarizado com a plataforma GitHub, que utilizo para controlar versões do código,
+          colaborar com outros desenvolvedores e acompanhar o histórico de alterações em projetos.
+        </p>
+        <div class="hab-grid">
+          <div class="skills">
+            <div class="skill">
+              <div id="skills-cards" class="container-cardskill">
+                <article class="skill-card html">
+                  <div class="overlay"></div>
+                  <img src="./iconesHab/css-3.png" />
+                </article>
+                <article class="skill-card css">
+                  <div class="overlay"></div>
+                  <img src="./iconesHab/github.png" />
+                </article>
+                <article class="skill-card js">
+                  <div class="overlay"></div>
+                  <img src="./iconesHab/html-5.png" />
+                </article>
+                <article class="skill-card js">
+                  <div class="overlay"></div>
+                  <img src="./iconesHab/java.png" />
+                </article>
+                <article class="skill-card js">
+                  <div class="overlay"></div>
+                  <img src="./iconesHab/js.png" />
+                </article>
+                <article class="skill-card js">
+                  <div class="overlay"></div>
+                  <img src="./iconesHab/spring.svg" />
+                </article>
+                <article class="skill-card js">
+                  <div class="overlay"></div>
+                  <img src="./iconesHab/mysql.png" />
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section experiencia -->
+
+  <section id="s-exp">
+    <div class="container-experiencia">
+      <h1>Experiências<span>.</span></h1>
+    </div>
+
+    <section class="card-container">
+      <section class="card card1">
+        <div class="card-content">
+          <h3>IT2B Tecnologia</h3>
+          <span class="card-text" id="card-text">
+            jan de 2023 - o momento<br>
+            Franca, São Paulo, Brasil · Modelo: Híbrida<br>
+            Alocado na PRODESP<br>
+            Competências: Java · Office 365 · Servidor Windows · Infraestrutura · Active Directory
+          </span>
+        </div>
+      </section>
+      <section class="card card2">
+        <div class="card-content">
+          <h3>Stefanini IT Solutions</h3>
+          <span class="card-text" id="card-text">
+            abr de 2022 - jan de 2023<br>
+            Franca, São Paulo, Brasil · Modelo: Híbrida<br>
+            Alocado na PRODESP<br>
+            Competências: Java · Office 365 · Servidor Windows · Infraestrutura · Active Directory
+          </span>
+        </div>
+      </section>
+      <section class="card card3">
+        <div class="card-content">
+          <h3>Lopes Supermercado</h3>
+          <span class="card-text" id="card-text">
+            set de 2021 - abr de 2022<br>
+            Franca, São Paulo, Brasil · Modelo: Presencial<br>
+            Competências: Office 365 · Servidor Windows · Infraestrutura · Active Directory · SQL · ERP (Planejamento de
+            recursos empresariais) · Microsoft Excel · Capacidade analítica
+          </span>
+          </br>
+        </div>
+      </section>
+      <section class="card card3">
+        <div class="card-content">
+          <h3>Carmen Steffens</h3>
+          <span class="card-text" id="card-text">
+            nov de 2019 - abr de 2022<br>
+            Franca, São Paulo, Brasil · Modelo: Presencial<br>
+            Competências: Office 365 · Servidor Windows · Active Directory
+          </span> </br>
+        </div>
+      </section>
+    </section>
+  </section>
+
+</body>
+
+</html>
