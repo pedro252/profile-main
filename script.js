@@ -14,26 +14,22 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 // Botao para scrolltop
+window.onscroll = function() {scrollFunction()};
 
-window.addEventListener('scroll', function() {
-    var btnTopo = document.getElementById('btn-topo');
-  
-    if (window.scrollY > 500) {
-      btnTopo.style.display = 'block';
-    } else {
-      btnTopo.style.display = 'none';
-    }
-  });
-  
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+function scrollFunction() {
+  var scrollButton = document.getElementById("scrollButton");
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
   }
-  
-  var btnTopo = document.getElementById('btn-topo');
-  btnTopo.addEventListener('click', scrollToTop);
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // Para navegadores Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+}
   
   //  Evento de clique no link "Home"
   const homeLink = document.querySelector('a[href="#s-about"]');
@@ -58,36 +54,3 @@ habilidadelink.addEventListener('click', (event) =>{
   const gridHabilidade = document.querySelector('container-habilidades');
   sExpSection.scrollIntoView({behavior: 'smooth'});
 });
-
-
-// // expandir card
-
-// // Função para exibir a mensagem "Olá mundo"
-// function exibirMensagem(element) {
-//   // Encontra o elemento de texto dentro do card
-//   var cardText = element.parentNode.querySelector('.card-text');
-
-//   // Verifica se a classe 'expanded' está presente no elemento de texto
-//   var isExpanded = cardText.classList.contains('expanded');
-
-//   // Se estiver expandido, remove a classe 'expanded' e redefine o texto do botão
-//   if (isExpanded) {
-//     cardText.classList.remove('expanded');
-//     element.innerHTML = 'Learn more';
-//   } else { // Se não estiver expandido, adiciona a classe 'expanded' e redefine o texto do botão
-//     cardText.classList.add('expanded');
-//     element.innerHTML = 'Olá mundo';
-//   }
-// }
-
-// Obtém todos os botões "Learn more" e adiciona o evento de clique a cada um deles
-var expandButtons = document.querySelectorAll('.expand-button');
-expandButtons.forEach(function(button) {
-  button.addEventListener('click', function() {
-    exibirMensagem(this);
-  });
-});
-
-
-
-  

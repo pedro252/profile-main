@@ -13,15 +13,16 @@
   <!-- <link rel="stylesheet" href="styleProfile.css"> -->
   <link rel="stylesheet" href="scrollreveal.css">
   <title>Document</title>
+
 </head>
 
 <body>
-  <!-- Botao para voltar ao topo da pagina -->
-  <button id="btn-topo" style="display: none;">Voltar ao topo</button>
 
   <section>
+
     <div class="background">
       <header>
+
         <div class="logo">
           <!-- <img src="./imagens/logo.png" width="70%"> -->
           <a>
@@ -114,61 +115,52 @@
     <div class="container-experiencia">
       <h1>Projetos<span>.</span></h1>
     </div>
+    <div class="container-projetos">
+      <section class="card-container">
+        <section class="card card1">
+          <div class="card-content">
+            <h3>Quiz Dev</h3>
+            <span class="card-text" id="card-text">
+              tecnologias- React, JavaScript, HTML e CSS<br>
+              O projeto tem como proposta fazer um quiz de perguntas sobre linguagem de programação, <br>
+              onde ele da 4 alternativas como resposta sendo uma delas a corre <br>
+              Quando chegar na ultima questão (5 questoes aleatorias no total), ira mostrar o valor de quantas você
+              acertou.
+              </br>
+            </span>
 
-    <section class="card-container">
-      <section class="card card1">
-        <div class="card-content">
-          <h3>Quiz Dev</h3>
-          <span class="card-text" id="card-text">
-            tecnologias- React, JavaScript, HTML e CSS<br>
-            O projeto tem como proposta fazer um quiz de perguntas sobre linguagem de programação, <br>
-            onde ele da 4 alternativas como resposta sendo uma delas a corre <br>
-            Quando chegar na ultima questão (5 questoes aleatorias no total), ira mostrar o valor de quantas você
-            acertou.
+            <button onclick="window.location.href = 'https://github.com/pedro252/QuizGame/tree/main';">
+              Repositorio
+            </button>
+          </div>
+        </section>
+        <section class="card card2">
+          <div class="card-content">
+            <h3>Pokedex</h3>
+            <span class="card-text" id="card-text">
+              Tecnologias - Typescript, React, HTML, CSS e JavaScript<br>
+              O projeto mostra uma lista de pokemon com seus status,</br>
+              onde foi criado um campo de pesquisa que ignora as letras maiuscula e minuscula, facilitando a pesquisa
+              </br>
+            </span>
+
+            <button onclick="window.location.href = 'https://github.com/pedro252/mypokedexmain';">Repositorio</button>
+          </div>
+        </section>
+        <section class="card card3">
+          <div class="card-content">
+            <h3>Aplicativo de finanças</h3>
+            <span class="card-text" id="card-text">
+              Tecnologias - JavaScript, React Native, HTML e CSS<br>
+              O Projeto consiste em um aplicativo com entrada e saida de valores<br>
+              onde permite o usuario fazer o controle financeiro de sua vida particular.
+            </span>
             </br>
-          </span>
-
-          <button class="expand-button">
-            <a href="https://github.com/pedro252/QuizGame/tree/main">Mostrar</a>
-          </button>
-        </div>
+            <button onclick="window.location.href = 'https://github.com/pedro252/financeiro-app';">Repositorio</button>
+          </div>
+        </section>
       </section>
-      <section class="card card2">
-        <div class="card-content">
-          <h3>Pokedex</h3>
-          <span class="card-text" id="card-text">
-            Tecnologias - Typescript, React, HTML, CSS e JavaScript<br>
-            O projeto mostra uma lista de pokemon com seus status,</br>
-            onde foi criado um campo de pesquisa que ignora as letras maiuscula e minuscula, facilitando a pesquisa </br>
-          </span>
-
-          <button class="expand-button"><a href="https://github.com/pedro252/mypokedexmain">Mostrar</a></button>
-        </div>
-      </section>
-      <section class="card card3">
-        <div class="card-content">
-          <h3>Aplicativo de finanças</h3>
-          <span class="card-text" id="card-text">
-            Tecnologias - JavaScript, React Native, HTML e CSS<br>
-            O Projeto consiste em um aplicativo com entrada e saida de valores<br>
-            onde criei um filtro para de entrada ()
-          </span>
-          </br>
-          <button class="expand-button">Learn more</button>
-        </div>
-      </section>
-      <section class="card card3">
-        <div class="card-content">
-          <h3>Carmen Steffens</h3>
-          <span class="card-text" id="card-text">
-            nov de 2019 - abr de 2022<br>
-            Franca, São Paulo, Brasil · Modelo: Presencial<br>
-            Competências: Office 365 · Servidor Windows · Active Directory
-          </span> </br>
-          <button class="expand-button">Learn more</button>
-        </div>
-      </section>
-    </section>
+    </div>
   </section>
   <!-- section do `Conhecimento` -->
   <section id="s-hab">
@@ -178,50 +170,45 @@
     <div class="hab-grid">
       <div>
         <p>
-          .Tenho familiaridade com a linguagem de programação Java,incluindo o framework Spring Boot,
-          o que me permite criar aplicações web robustas e escaláveis.
-          Além disso, tenho conhecimento em bancos de dados relacionais, como o MySQL, e estou apto a criar,
-          gerenciar e otimizar estruturas de dados eficientes.
-          No front-end, possuo habilidades em JavaScript, HTML5 e CSS,
-          que me permitem criar interfaces interativas e atraentes para os usuários.
-          Também estou familiarizado com a plataforma GitHub, que utilizo para controlar versões do código,
-          colaborar com outros desenvolvedores e acompanhar o histórico de alterações em projetos.
+                  .Tenho familiaridade com a linguagem de programação Java, incluindo o framework SpringBoot,
+          o que me permite criar aplicações web robustas e escaláveis. Além disso, tenho conhecimento em bancos de dados relacionais, como o MySQL, e estou apto a criar, gerenciar e otimizar estruturas de dados eficientes.
+          No front-end, possuo habilidades em JavaScript, HTML5 e CSS, que me permitem criar interfaces interativas e atraentes para os usuários. Também estou familiarizado com a plataforma GitHub, que utilizo para controlar versões do código, colaborar com outros desenvolvedores e acompanhar o histórico de alterações em projetos.
         </p>
         <div class="hab-grid">
-          <div class="skills">
-            <div class="skill">
-              <div id="skills-cards" class="container-cardskill">
-                <article class="skill-card html">
-                  <div class="overlay"></div>
-                  <img src="./iconesHab/css-3.png" />
-                </article>
-                <article class="skill-card css">
-                  <div class="overlay"></div>
-                  <img src="./iconesHab/github.png" />
-                </article>
-                <article class="skill-card js">
-                  <div class="overlay"></div>
-                  <img src="./iconesHab/html-5.png" />
-                </article>
-                <article class="skill-card js">
-                  <div class="overlay"></div>
-                  <img src="./iconesHab/java.png" />
-                </article>
-                <article class="skill-card js">
-                  <div class="overlay"></div>
-                  <img src="./iconesHab/js.png" />
-                </article>
-                <article class="skill-card js">
-                  <div class="overlay"></div>
-                  <img src="./iconesHab/spring.svg" />
-                </article>
-                <article class="skill-card js">
-                  <div class="overlay"></div>
-                  <img src="./iconesHab/mysql.png" />
-                </article>
-              </div>
+
+          <div class="skill">
+            <div id="skills-cards" class="container-cardskill">
+              <article class="skill-card html">
+                <div class="overlay"></div>
+                <img src="./iconesHab/css-3.png" />
+              </article>
+              <article class="skill-card css">
+                <div class="overlay"></div>
+                <img src="./iconesHab/github.png" />
+              </article>
+              <article class="skill-card js">
+                <div class="overlay"></div>
+                <img src="./iconesHab/html-5.png" />
+              </article>
+              <article class="skill-card js">
+                <div class="overlay"></div>
+                <img src="./iconesHab/java.png" />
+              </article>
+              <article class="skill-card js">
+                <div class="overlay"></div>
+                <img src="./iconesHab/js.png" />
+              </article>
+              <article class="skill-card js">
+                <div class="overlay"></div>
+                <img src="./iconesHab/spring.svg" />
+              </article>
+              <article class="skill-card js">
+                <div class="overlay"></div>
+                <img src="./iconesHab/mysql.png" />
+              </article>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -281,6 +268,9 @@
       </section>
     </section>
   </section>
+
+
+  <button onclick="scrollToTop()" id="scrollButton" title="Voltar ao topo"></button>
 
 </body>
 
