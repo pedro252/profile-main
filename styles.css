@@ -16,8 +16,8 @@ body {
 }
 
 h3 {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+    color: rgb(207, 93, 0);
+    font-size: 22px;
 }
 
 header {
@@ -30,7 +30,7 @@ header {
 }
 
 .cabecalho-link {
-    color: rgb(11, 129, 0);
+    color: rgb(207, 93, 0);
     display: flex;
     gap: 3rem;
     font-weight: 300;
@@ -47,11 +47,11 @@ button {
     border-radius: 15px;
     width: 150px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: rgb(0, 126, 73);
+    background-color: rgb(207, 93, 0);
     color: aliceblue;
     transition: 0.5s;
 }
@@ -63,8 +63,8 @@ button:hover {
 }
 
 .text h3 {
-    color: rgb(255, 255, 255);
-    font-size: 25px;
+    color: rgb(207, 93, 0);
+    font-size: 30px;
 }
 
 .text h1 {
@@ -73,18 +73,18 @@ button:hover {
 }
 
 .text span {
-    color: rgb(11, 129, 0);
+    color: rgb(207, 93, 0);
 }
 
 .text p {
     color: rgb(255, 255, 255);
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
     margin-top: 10px;
 }
 
 .redes-sociais {
-    color: rgb(11, 129, 0);
+    color: rgb(207, 93, 0);
     padding: 10px;
     margin-top: 5px;
 }
@@ -113,15 +113,17 @@ body {
     height: 500px;
     /* Ajuste o valor conforme necessário */
     overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
 }
-
+/* 
 .itd-text {
-    color: rgb(255, 255, 255);
-    font-size: 55px;
-}
+    color: rgb(207, 93, 0);
+    font-size: 7px;
+} */
 
 .container-experiencia span {
-    color: rgb(6, 177, 0);
+    color: rgb(207, 93, 0);
 }
 
 .container-experiencia {
@@ -143,7 +145,7 @@ body {
 }
 
 .card .card-content h3 {
-    color: rgb(46, 145, 0);
+    color: rgb(207, 93, 0);
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -167,6 +169,7 @@ body {
     font-size: 70%;
     font-weight: 500;
 }
+
 .card-container {
     display: flex;
     justify-content: space-between;
@@ -174,14 +177,9 @@ body {
     margin-top: 10px;
 }
 
-.expand-button:hover {
-    background-color: rgb(0, 107, 62);
-    color: rgb(255, 255, 255);
-    transition: 0.5s;
-}
 
 .container-habilidades span {
-    color: rgb(6, 177, 0);
+    color: rgb(207, 93, 0);
 }
 
 .container-habilidades {
@@ -191,48 +189,53 @@ body {
 
 .container-cardskill {
     display: grid;
-    grid-template-columns: repeat(3, 35%); /* Definir o tamanho das colunas como 20% */
-    grid-gap: -10px; /* Adicionar um espaçamento negativo para compensar o espaço extra */
+    grid-template-columns: repeat(3, 35%);
+    /* Definir o tamanho das colunas como 20% */
+    grid-gap: -10px;
+    /* Adicionar um espaçamento negativo para compensar o espaço extra */
     margin-top: 50px;
     text-align: right;
-  }
-  
-  .skill-card {
+}
+
+.skill-card {
     position: relative;
     overflow: hidden;
-  }
-  
-  .skill-card img {
-    width: 100%; /* Definir o tamanho das imagens como 100% */
+}
+
+.skill-card img {
+    width: 100%;
+    /* Definir o tamanho das imagens como 100% */
     height: auto;
     transition: transform 0.3s ease;
-  }
-  
-  .skill-card:hover img {
+}
+
+.skill-card:hover img {
     transform: scale(1.1);
-  }
-  
-  .skill-card:hover .overlay {
+}
+
+.skill-card:hover .overlay {
     opacity: 1;
-  }
-  
-  .skill-card .overlay::before {
+}
+
+.skill-card .overlay::before {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size:24px;
-  }
+    font-size: 24px;
+}
 
-.container-projetos{
+.container-projetos {
     max-width: 100%;
     display: flex;
     padding: 6%;
 }
 
 /* ----------Home */
-
+.title-profile{
+    font-size: 30px;
+}
 #s-about .grid-layout>div {
     background-color: #474747;
     border: 2px solid #4d4d4d;
@@ -249,10 +252,10 @@ body {
 }
 
 #s-about .grid-layout>div div:nth-child(2) h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
     margin: 16px 0px;
-    color: #0a7a00
+    color: rgb(207, 93, 0)
 }
 
 
@@ -281,15 +284,17 @@ body {
     float: left;
     border-radius: 10%;
 }
+
 .grid-layout {
     max-width: 1140px;
-    margin: 0 auto
+    margin: 0 auto;
+    margin-top: 5%;
 }
 
 /* ---------------Conhecimentos */
 #s-hab .hab-grid>div {
-    
-    display:inline-flex;
+
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
     height: auto;
@@ -305,21 +310,23 @@ body {
     margin: 0 auto;
     text-align: justify;
 }
+
 /* ---------------------Logo */
-.logo{
+.logo {
     font-weight: bold;
-    font-size:25px;
+    font-size: 25px;
 }
-.corLogo{
-    color: #0a7a00;
-    font-size:40px;
+
+.corLogo {
+    color: rgb(207, 93, 0);
+    font-size: 40px;
     font-weight: bold;
 }
 
-.skill{
+.skill {
     max-width: 100%;
 }
-
+/* ----------------------ScrollButtonTop */
 #scrollButton {
     display: none;
     position: fixed;
@@ -335,8 +342,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-  }
+}
 
-  .button-card{
+.button-card {
     margin-top: 100px;
+}
+/* -------------------rodape */
+
+footer {
+    background-color: #474747;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
   }

@@ -54,3 +54,45 @@ habilidadelink.addEventListener('click', (event) =>{
   const gridHabilidade = document.querySelector('container-habilidades');
   sExpSection.scrollIntoView({behavior: 'smooth'});
 });
+
+//Trabalhos
+
+const trabalheilink = document.getElementById('trabalheilink');
+const sExpSection = document.getElementById('s-trb');
+
+trabalheilink.addEventListener('click', (event) => {
+  event.preventDefault();
+  sExpSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+
+//theme-white
+
+const changeThemeBtn = document.querySelector("#change-theme");
+
+// Toggle dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
+
+// Load light or dark mode
+function loadTheme() {
+  const darkMode = localStorage.getItem("dark");
+
+  if (darkMode) {
+    toggleDarkMode();
+  }
+}
+
+loadTheme();
+
+changeThemeBtn.addEventListener("change", function () {
+  toggleDarkMode();
+
+  // Save or remove dark mode from localStorage
+  localStorage.removeItem("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("dark", 1);
+  }
+});
