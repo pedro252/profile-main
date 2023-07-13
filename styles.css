@@ -116,6 +116,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 /* 
 .itd-text {
     color: rgb(207, 93, 0);
@@ -131,52 +132,49 @@ body {
     font-size: 32px;
 }
 
-
-.card {
-    max-width: 20%;
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .card {
+    flex: 0 0 calc(20% - 20px);
+    height: 250px; /* Altura fixa para os cards */
+    margin-bottom: 20px;
     padding: 1rem 1.5rem;
     border-radius: 8px;
     background-color: #474747;
     border: 1px solid #4d4d4d;
-}
-
-.card .card-content {
-    text-align: center;
-}
-
-.card .card-content h3 {
-    color: rgb(207, 93, 0);
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.card .card-content .card-text {
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.5;
-    max-height: 60px;
-    overflow: hidden;
-    transition: max-height 0.5s;
-}
-
-.card .card-content button {
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    border-radius: 32px;
-    border: 0;
-    cursor: pointer;
-    font-size: 70%;
-    font-weight: 500;
-}
-
-.card-container {
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      flex-basis: calc(100% - 20px);
+    }
+  }
+  
+  .card-content {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
+    align-items: flex-start;
+    height: 100%;
+  }
+  
+  .card-content button {
+    margin-top: auto;
+    align-self: center;
+  }
+  
 
 .container-habilidades span {
     color: rgb(207, 93, 0);
@@ -233,9 +231,10 @@ body {
 }
 
 /* ----------Home */
-.title-profile{
+.title-profile {
     font-size: 30px;
 }
+
 #s-about .grid-layout>div {
     background-color: #474747;
     border: 2px solid #4d4d4d;
@@ -326,6 +325,7 @@ body {
 .skill {
     max-width: 100%;
 }
+
 /* ----------------------ScrollButtonTop */
 #scrollButton {
     display: none;
@@ -347,6 +347,7 @@ body {
 .button-card {
     margin-top: 100px;
 }
+
 /* -------------------rodape */
 
 footer {
@@ -354,4 +355,4 @@ footer {
     padding: 20px;
     text-align: center;
     color: #ffffff;
-  }
+}
