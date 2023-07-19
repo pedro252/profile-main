@@ -6,9 +6,9 @@ window.addEventListener('DOMContentLoaded', () => {
     sr.reveal('.container-text', { delay: 100 });
     sr.reveal('.grid-layout', { delay: 100 });
     sr.reveal('.container-experiencia', { delay: 100 });
-    sr.reveal('.card-content', { delay: 100 });
+    sr.reveal('.container-projetos', { delay: 100 });
     sr.reveal('.container-habilidades',{ delay: 100 });
-    sr.reveal('.hab-grid', { delay: 100 });
+    // sr.reveal('.hab-grid', { delay: 100 });
   });
   
 
